@@ -1,0 +1,718 @@
+@charset "utf-8";
+
+@import url('./common.css');
+
+main{
+    margin-top:100px;
+    /* border:1px solid red; */
+}
+main .logo{
+    height:100px;
+}
+main .logo a{
+    margin:0px auto;
+    display:block;
+    text-align:center;
+}
+main .logo a p{
+    /* border:1px solid coral; */
+    text-transform:uppercase;
+    font-size:2rem;
+    font-weight:bold;
+}
+
+main .navi-bar{
+    width:80px;
+    height:300px;
+    /* border:1px solid black; */
+    position:fixed;
+    left:85%; top:50%;
+    z-index:100;
+    display:flex;
+    flex-direction:column;
+    justify-content: space-between;
+    flex-wrap:wrap;
+    text-align:center;
+
+}
+main .navi-bar .bar{
+    width:100%;
+    height:80%;
+    padding:10px 0;
+    position:absolute;
+    top:0; left:0;
+    background-color:#FFD2B1;
+    color:#804343;
+    font-size:14px;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border-radius:10px;
+    text-align:center;
+}
+
+main .navi-bar .bar div::after{
+    content:'';
+    width:70px;
+    height:70px;
+    border-radius:100px;
+    background-color:white;
+}
+
+main .kakao{
+    position:absolute;
+    top:82%;
+    width:100%;
+    height:20%;
+}
+main .kakao a img{
+    width:80%;
+    margin:0px auto;
+}
+main .kakao a p{
+    white-space: pre-line;
+    margin-top:10px;
+    font-size:12px;
+    color:#969696;
+}
+
+
+/* =============================================================================== */
+/* @media (max-width:360px){
+    main .navi-bar {
+        display:none;
+        font-size:10px;
+    }
+    main .logo a p{
+        font-size:0.8rem;
+        font-weight:lighter;
+    }
+}
+@media (min-width:361px) and (max-width:699px){}
+@media (min-width:699px) and (max-width:1340px){}
+@media (min-width:1339px){} */
+
+@media (max-width:767px){
+    main{
+        margin-top:50px;
+        /* border:1px solid red; */
+    }
+    main .logo{
+        height:100px;
+    }
+    main .logo a{
+        margin:0px auto;
+        display:block;
+        text-align:center;
+    }
+    main .logo a p{
+        /* border:1px solid coral; */
+        text-transform:uppercase;
+        font-size:2rem;
+        font-weight:bold;
+    }
+    
+    main .navi-bar{
+        width:80px;
+        height:300px;
+        /* border:1px solid black; */
+        position:fixed;
+        left:85%; top:50%;
+        z-index:100;
+        display:flex;
+        flex-direction:column;
+        justify-content: space-between;
+        flex-wrap:wrap;
+        text-align:center;
+        display:none;
+    
+    }
+    main .navi-bar .bar{
+        width:100%;
+        height:80%;
+        padding:10px 0;
+        position:absolute;
+        top:0; left:0;
+        background-color:#FFD2B1;
+        color:#804343;
+        font-size:14px;
+        display:flex;
+        flex-direction: column;
+        justify-content: space-around;
+        border-radius:10px;
+        text-align:center;
+    }
+    
+    main .navi-bar .bar div::after{
+        content:'';
+        width:70px;
+        height:70px;
+        border-radius:100px;
+        background-color:white;
+    }
+    
+    main .kakao{
+        position:absolute;
+        top:82%;
+        width:100%;
+        height:20%;
+    }
+    main .kakao a img{
+        width:80%;
+        margin:0px auto;
+    }
+    main .kakao a p{
+        white-space: pre-line;
+        margin-top:10px;
+        font-size:12px;
+        color:#969696;
+    }
+    
+}
+@media (min-width:768px) and (max-width:1024px){
+    main{
+        margin-top:50px;
+        /* border:1px solid red; */
+    }
+    main .logo{
+        height:100px;
+    }
+    main .logo a{
+        margin:0px auto;
+        display:block;
+        text-align:center;
+    }
+    main .logo a p{
+        /* border:1px solid coral; */
+        text-transform:uppercase;
+        font-size:2rem;
+        font-weight:bold;
+    }
+    
+    main .navi-bar{
+        width:80px;
+        height:300px;
+        /* border:1px solid black; */
+        position:fixed;
+        left:85%; top:50%;
+        z-index:100;
+        display:flex;
+        flex-direction:column;
+        justify-content: space-between;
+        flex-wrap:wrap;
+        text-align:center;
+        display:none;
+    
+    }
+    main .navi-bar .bar{
+        width:100%;
+        height:80%;
+        padding:10px 0;
+        position:absolute;
+        top:0; left:0;
+        background-color:#FFD2B1;
+        color:#804343;
+        font-size:14px;
+        display:flex;
+        flex-direction: column;
+        justify-content: space-around;
+        border-radius:10px;
+        text-align:center;
+    }
+    
+    main .navi-bar .bar div::after{
+        content:'';
+        width:70px;
+        height:70px;
+        border-radius:100px;
+        background-color:white;
+    }
+    
+    main .kakao{
+        position:absolute;
+        top:82%;
+        width:100%;
+        height:20%;
+    }
+    main .kakao a img{
+        width:80%;
+        margin:0px auto;
+    }
+    main .kakao a p{
+        white-space: pre-line;
+        margin-top:10px;
+        font-size:12px;
+        color:#969696;
+    }
+
+}
+/* ============================================================================== */
+main h1{
+    font-size:3rem;
+    padding:5px 10px;
+    margin-top:150px;
+    text-align:center;
+    font-weight:normal;
+}
+
+
+main .in-bg{
+    width:60%;
+    margin:100px auto 70px;
+    background-color: #F9EFE4;
+    border-radius: 20px;
+    padding:50px;
+}
+main .login-up{
+    
+}
+main .login-up .login{
+    width:80%;
+    margin:100px auto 50px;
+    display:flex;
+    justify-content: space-evenly;
+    align-content: center;
+    align-items: center;
+    text-align:center;
+}
+main .login-up .login img{
+    width:150px;
+}
+main .login-up .login .input{
+    width:40%;
+}
+main .login-up .login .input-id{
+    width:100%;
+    display:flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+main .login-up .login .input-id p{
+    width:30%;
+    text-align:Center;
+}
+main .login-up .login .input-id input{
+    height:30px;
+    width:70%;
+}
+main .login-up .login .input-pw{
+    display:flex;
+    align-items: center;
+}
+main .login-up .login .input-pw p{
+    width:30%;
+    text-align:center;
+}
+main .login-up .login .input-pw input{
+    height:30px;
+    width:70%;
+
+}
+
+main .login-up .login a{
+    width:10%;
+    padding:10px 20px;
+    background-color: #E9C8A2;
+    font-size:20px;
+    border-radius: 20px;
+}
+
+main .login-help{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-top:0px;
+}
+main .login-help div{
+    width:60%;
+    margin:50px auto 20px;
+}
+main .login-help div .join{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+main .login-help div .pw-help{
+    margin-top:20px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+main .login-help div div a{
+    padding:15px;
+    background-color: #E9C8A2;
+    border-radius: 20px;
+    color:white;
+    transition:0.5s;
+}
+
+main .login-help div div a:hover{
+    background-color: white;
+    color:black;
+    transform:translate(-1px,-1px);
+    box-shadow:1px 1px 2px black;
+}
+
+/* ==================================================================================== */
+@media (max-width:767px){
+    main h1{
+        font-size:2em;
+        padding:5px 10px;
+        margin-top:100px;
+        text-align:center;
+        font-weight:normal;
+    }
+    
+    
+    main .in-bg{
+        width:70%;
+        margin:100px auto 70px;
+        background-color: #F9EFE4;
+        border-radius: 20px;
+        padding:50px;
+    }
+    main .login-up{
+        
+    }
+    main .login-up .login{
+        width:80%;
+        margin:100px auto 50px;
+        display:flex;
+        justify-content: space-evenly;
+        align-content: center;
+        align-items: center;
+        text-align:center;
+    }
+    main .login-up .login img{
+        width:25%;
+    }
+    main .login-up .login .input{
+        width:50%;
+    }
+    main .login-up .login .input-id{
+        width:100%;
+        display:flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    main .login-up .login .input-id p{
+        width:35%;
+        text-align:Center;
+        font-size:0.8em;
+    }
+    main .login-up .login .input-id input{
+        height:30px;
+        width:70%;
+    }
+    main .login-up .login .input-pw{
+        display:flex;
+        align-items: center;
+    }
+    main .login-up .login .input-pw p{
+        width:35%;
+        text-align:center;
+        font-size:0.8em;
+    }
+    main .login-up .login .input-pw input{
+        height:30px;
+        width:70%;
+    
+    }
+    
+    main .login-up .login a{
+        width:15%;
+        padding:5px 10px;
+        background-color: #E9C8A2;
+        font-size:0.8em;
+        border-radius: 20px;
+    }
+    /* ================================================================== */
+    main .login-help{
+        display:flex;
+        flex-direction: column;
+        justify-content: space-around;
+        margin-top:0px;
+    }
+    main .login-help div{
+        width:80%;
+        margin:50px auto 20px;
+        font-size:0.9em;
+    }
+    main .login-help div .join{
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    main .login-help div .pw-help{
+        margin-top:20px;
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+    
+    }
+    
+    main .login-help div div a{
+        padding:5px 10px;
+        background-color: #E9C8A2;
+        border-radius: 20px;
+        color:white;
+        transition:0.5s;
+    }
+    
+    main .login-help div div a:hover{
+        background-color: white;
+        color:black;
+        transform:translate(-1px,-1px);
+        box-shadow:1px 1px 2px black;
+    }
+    
+}
+@media (min-width:768px) and (max-width:1024px){
+    main h1{
+        font-size:2em;
+        padding:5px 10px;
+        margin-top:100px;
+        text-align:center;
+        font-weight:normal;
+    }
+    
+    
+    main .in-bg{
+        width:70%;
+        margin:100px auto 70px;
+        background-color: #F9EFE4;
+        border-radius: 20px;
+        padding:20px;
+    }
+    main .login-up{
+        
+    }
+    main .login-up .login{
+        width:80%;
+        margin:100px auto 50px;
+        display:flex;
+        justify-content: space-evenly;
+        align-content: center;
+        align-items: center;
+        text-align:center;
+    }
+    main .login-up .login img{
+        width:25%;
+    }
+    main .login-up .login .input{
+        width:50%;
+    }
+    main .login-up .login .input-id{
+        width:100%;
+        display:flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    main .login-up .login .input-id p{
+        width:35%;
+        text-align:Center;
+        font-size:0.8em;
+    }
+    main .login-up .login .input-id input{
+        height:30px;
+        width:70%;
+    }
+    main .login-up .login .input-pw{
+        display:flex;
+        align-items: center;
+    }
+    main .login-up .login .input-pw p{
+        width:35%;
+        text-align:center;
+        font-size:0.8em;
+    }
+    main .login-up .login .input-pw input{
+        height:30px;
+        width:70%;
+    
+    }
+    
+    main .login-up .login a{
+        width:15%;
+        padding:5px 10px;
+        background-color: #E9C8A2;
+        font-size:0.8em;
+        border-radius: 20px;
+    }
+    /* ================================================================== */
+    main .login-help{
+        display:flex;
+        flex-direction: column;
+        justify-content: space-around;
+        margin-top:0px;
+    }
+    main .login-help div{
+        width:80%;
+        margin:50px auto 20px;
+        font-size:0.9em;
+    }
+    main .login-help div .join{
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    main .login-help div .pw-help{
+        margin-top:20px;
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+    
+    }
+    
+    main .login-help div div a{
+        padding:5px 10px;
+        background-color: #E9C8A2;
+        border-radius: 20px;
+        color:white;
+        transition:0.5s;
+    }
+    
+    main .login-help div div a:hover{
+        background-color: white;
+        color:black;
+        transform:translate(-1px,-1px);
+        box-shadow:1px 1px 2px black;
+    }
+}
+
+
+
+/* ======================================================================================== */
+
+
+
+main .monthlycommand{
+    font-size:1.3rem;
+    padding:10px 20px;
+    font-weight:lighter;
+    text-align:center;
+    margin-top:100px;
+    margin-bottom:50px;
+}
+
+main .monthlycommand b{
+    margin-bottom:50px;
+}
+
+main .monthlycommand div{
+    display:flex;
+    margin:20px auto;
+    flex-wrap:nowrap;
+    width:80%;
+    justify-content: space-between;
+    animation: flow 5s infinite alternate ease-in-out;
+
+}
+/* 3drotate 돌려보기 */
+/* @keyframes flow{
+    0%{transform:translateX(0%)}
+    50%{transform:translateX(50%)}
+    100%{transform:translateX(100%)}
+} */
+
+main .monthlycommand b{
+    display:inline-block;
+    margin-bottom:50px;
+}
+main .monthlycommand figure{
+    width:18%;
+}
+main .monthlycommand figure img{
+    width:100%;
+    height:80%;
+    margin-bottom:10px;
+}
+
+
+main .monthlycommand figure figcaption{
+    font-size:15px;
+}
+/* =============================================================================== */
+@media (max-width:767px){
+    main .monthlycommand{
+        font-size:1em;
+        padding:10px 20px;
+        font-weight:lighter;
+        text-align:center;
+        margin-top:100px;
+        margin-bottom:50px;
+    }
+    
+    main .monthlycommand b{
+        margin-bottom:50px;
+    }
+    
+    main .monthlycommand div{
+        width:80%;
+        display:flex;
+        margin:20px auto;
+        flex-wrap:nowrap;
+        justify-content: space-between;
+        /* animation: flow 5s infinite alternate ease-in-out; */
+    }
+
+    main .monthlycommand b{
+        display:inline-block;
+        margin-bottom:50px;
+    }
+    main .monthlycommand figure{
+        width:18%;
+    }
+    main .monthlycommand figure img{
+        width:100%;
+        height:60%;
+        margin-bottom:10px;
+    }
+    
+    
+    main .monthlycommand figure figcaption{
+        font-size:0.8em;
+    }
+}
+
+@media (min-width:768px) and (max-width:1024px){
+    main .monthlycommand{
+        font-size:1em;
+        padding:10px 20px;
+        font-weight:lighter;
+        text-align:center;
+        margin-top:100px;
+        margin-bottom:50px;
+    }
+    
+    main .monthlycommand b{
+        margin-bottom:50px;
+    }
+    
+    main .monthlycommand div{
+        width:80%;
+        display:flex;
+        margin:20px auto;
+        flex-wrap:nowrap;
+        justify-content: space-between;
+        /* animation: flow 5s infinite alternate ease-in-out; */
+    }
+
+    main .monthlycommand b{
+        display:inline-block;
+        margin-bottom:50px;
+    }
+    main .monthlycommand figure{
+        width:18%;
+    }
+    main .monthlycommand figure img{
+        width:100%;
+        height:60%;
+        margin-bottom:10px;
+    }
+    main .monthlycommand figure figcaption{
+        font-size:0.8em;
+    }
+}

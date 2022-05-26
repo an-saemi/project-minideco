@@ -1,0 +1,124 @@
+@charset "utf-8";
+
+@import url('./common.css');
+
+
+main{
+    margin-top:100px;
+    /* border:1px solid red; */
+}
+
+main .logo{
+    height:100px;
+}
+main .logo a{
+    margin:0px auto;
+    display:block;
+    text-align:center;
+}
+main .logo a p{
+    /* border:1px solid coral; */
+    text-transform:uppercase;
+    font-size:2rem;
+    font-weight:bold;
+}
+
+main .navi-bar{
+    width:80px;
+    height:300px;
+    /* border:1px solid black; */
+    position:fixed;
+    left:85%; top:40%;
+    z-index:100;
+    display:flex;
+    flex-direction:column;
+    justify-content: space-between;
+    flex-wrap:wrap;
+    text-align:center;
+
+}
+main .navi-bar .bar{
+    width:100%;
+    height:80%;
+    padding:10px 0;
+    position:absolute;
+    top:0; left:0;
+    background-color:#FFD2B1;
+    color:#804343;
+    font-size:14px;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border-radius:10px;
+    text-align:center;
+}
+
+main .navi-bar .bar div::after{
+    content:'';
+    width:70px;
+    height:70px;
+    border-radius:100px;
+    background-color:white;
+}
+
+main .kakao{
+    position:absolute;
+    top:82%;
+    width:100%;
+    height:20%;
+}
+main .kakao a img{
+    width:80%;
+    margin:0px auto;
+}
+main .kakao a p{
+    white-space: pre-line;
+    margin-top:10px;
+    font-size:12px;
+    color:#969696;
+}
+
+main h1{
+    font-size:3rem;
+    padding:5px 10px;
+    margin-top:150px;
+    text-align:center;
+    font-weight:normal;
+}
+
+main .table{
+    width:60%;
+    height:600px;
+    margin:100px auto;
+    text-align:center;
+    
+}
+main .table table{
+    width:100%;
+    border:1px solid black;
+    border-collapse:collapse;
+}
+main .table thead{
+    background-color: #FFD2B1;
+}
+
+main .table > table > tr{
+    display:flex;
+    justify-content: space-between;
+}
+main .table > table td{
+    border:1px solid #969696;
+    padding:10px;
+    font-size:15px;
+    color:#808080;
+}
+
+main .table > table td:hover{
+    border:1px solid #000;
+    padding:10px;
+    font-size:15px;
+    color:#000;
+}
+main .table table tr td:nth-of-type(2){
+    width:50%;
+}

@@ -14,7 +14,7 @@ main .logo {
 
 main .logo>img {
     width: 100%;
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
 
 main .logo a {

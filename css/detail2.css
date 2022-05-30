@@ -273,9 +273,11 @@ main .up {
     width: 70%;
     height: 700px;
     margin: 50px auto;
+    margin-top:250px;
     overflow: hidden;
     display: flex;
     justify-content: space-between;
+    
 }
 
 main .up .left {
@@ -425,6 +427,7 @@ main .up .right .icon a:hover > figure > figcaption{
         width:70%;
         height:400px;
         margin:50px auto;
+        margin-top:100px;
         overflow:hidden;
         display:flex;
         justify-content: space-around;
@@ -556,6 +559,7 @@ main .up .right .icon a:hover > figure > figcaption{
         width:70%;
         height:400px;
         margin:30px auto;
+        margin-top:150px;
         overflow:hidden;
         display:flex;
         justify-content: space-around;

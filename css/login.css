@@ -250,7 +250,7 @@ main .kakao a p{
 main h1{
     font-size:3rem;
     padding:5px 10px;
-    margin-top:150px;
+    margin-top:250px;
     text-align:center;
     font-weight:normal;
 }
@@ -473,7 +473,7 @@ main .login-help div div a:hover{
     main h1{
         font-size:2em;
         padding:5px 10px;
-        margin-top:100px;
+        margin-top:150px;
         text-align:center;
         font-weight:normal;
     }

@@ -12,9 +12,11 @@ main .logo {
     position: relative;
 }
 
-main .logo>img {
+/* main .logo>img {
     width: 100%;
-    /* border: 1px solid black; */
+    /* border: 1px solid black;} */
+main .logo>video{
+    width:100%;
 }
 
 main .logo a {
@@ -30,6 +32,14 @@ main .logo a p {
     text-transform: uppercase;
     font-size: 5rem;
     display: block;
+    animation: title 2s forwards;
+    animation-delay: 4.5s;
+    color:transparent;
+}
+
+@keyframes title{
+    0%{color:transparent;}
+    100%{color:black;}
 }
 
 main .navi-bar {

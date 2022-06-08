@@ -434,7 +434,7 @@ main .indi {
     height: fit-content;
     margin:0px auto;
     margin-top:10px;
-    background-color: #FFD2B1;
+    background-color: #F9EFE4;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
@@ -476,7 +476,7 @@ main .indi .input div:hover label {
         height: fit-content;
         margin:0px auto;
         margin-top:10px;
-        background-color: #FFD2B1;
+        background-color: #F9EFE4;
         border-radius: 10px;
         display: flex;
         flex-direction: column;
@@ -517,7 +517,7 @@ main .indi .input div:hover label {
         height: fit-content;
         margin:0px auto;
         margin-top:10px;
-        background-color: #FFD2B1;
+        background-color: #F9EFE4;
         border-radius: 10px;
         display: flex;
         flex-direction: column;
@@ -558,7 +558,7 @@ main .left .select {
     width: 80%;
     height: fit-content;
     margin:10px auto;
-    background-color: #FFD2B1;
+    background-color: #F9EFE4;
     border-radius: 10px;
     text-align: center;
 
@@ -575,7 +575,7 @@ main .pricefilter {
     width: 80%;
     height: fit-content;
     margin:10px auto;
-    background-color: #FFD2B1;
+    background-color: #F9EFE4;
     border-radius: 10px;
     text-align: center;
     padding-bottom:5px;
@@ -600,7 +600,7 @@ main .keyword {
     width: 80%;
     height: 20%;
     margin:10px auto;
-    background-color: #FFD2B1;
+    background-color: #F9EFE4;
     border-radius: 10px;
     text-align: center;
 }
@@ -637,7 +637,7 @@ main .keyword>.word p{
         width: 100%;
         height: fit-content;
         margin:10px auto;
-        background-color: #FFD2B1;
+        background-color: #F9EFE4;
         border-radius: 10px;
         text-align: center;
     }
@@ -652,7 +652,7 @@ main .keyword>.word p{
         width: 100%;
         height: fit-content;
         margin:10px auto;
-        background-color: #FFD2B1;
+        background-color: #F9EFE4;
         border-radius: 10px;
         text-align: center;
         padding-bottom:5px;
@@ -677,7 +677,7 @@ main .keyword>.word p{
         height: fit-content;
         padding-bottom:5px;
         margin:10px auto;
-        background-color: #FFD2B1;
+        background-color: #F9EFE4;
         border-radius: 10px;
         text-align: center;
     }
@@ -713,7 +713,7 @@ main .keyword>.word p{
         width: 100%;
         height: fit-content;
         margin:10px auto;
-        background-color: #FFD2B1;
+        background-color: #F9EFE4;
         border-radius: 10px;
         text-align: center;
     }
@@ -728,7 +728,7 @@ main .keyword>.word p{
         width: 100%;
         height: fit-content;
         margin:10px auto;
-        background-color: #FFD2B1;
+        background-color: #F9EFE4;
         border-radius: 10px;
         text-align: center;
         padding-bottom:5px;
@@ -753,7 +753,7 @@ main .keyword>.word p{
         height: fit-content;
         padding-bottom:5px;
         margin:10px auto;
-        background-color: #FFD2B1;
+        background-color: #F9EFE4;
         border-radius: 10px;
         text-align: center;
     }

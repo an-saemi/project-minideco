@@ -308,7 +308,8 @@ main .kakao a p {
 
 main .cate {
     width: 60%;
-    margin: 0 auto;
+    margin: 0px auto;
+    padding:20px 0px;
     /* border:1px solid blueviolet; */
 }
 
@@ -318,14 +319,15 @@ main .cate ul {
     justify-content: space-evenly;
     background-color: rgb(254, 230, 188);
     border-radius: 20px;
+    padding:0; margin:0;
 }
 
 main .cate ul li {
     padding: 10px;
     text-transform: capitalize;
-    font-size: 20px;
-    color: rgb(131, 74, 74);
+    font-size: 1.2em;
     transition: 0.5s;
+    color: rgb(131, 74, 74);
 }
 
 main .cate ul li:hover {
@@ -336,7 +338,7 @@ main .cate ul li::after {
     content: '';
     width: 0%;
     display: block;
-    border-bottom: 1px solid rgb(131, 74, 74);
+    border-bottom: 2px solid rgb(131, 74, 74);
     transition: 0.5s;
 }
 
@@ -344,6 +346,10 @@ main .cate ul li:hover::after {
     content: '';
     width: 100%;
 
+}
+main .cate ul li a{
+    font-weight:normal;
+    color: rgb(131, 74, 74);
 }
 
 
@@ -438,7 +444,7 @@ main .cate ul li:hover::after {
 /* ======================================================================= */
 
 main .best {
-    margin-top: 200px;
+    margin-top: 150px;
     /* border:1px solid black; */
     text-align: center;
 }

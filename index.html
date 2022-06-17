@@ -16,6 +16,8 @@
     <script defer src="./js/common.js"></script>
     <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
     <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
+    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
 </head>
 
 
@@ -126,22 +128,14 @@
             <p>미니데코만의 깜짝 할인! 스페셜한 아이템을 스페셜한 가격에 만나볼 수 있는 기회!</p>
             <!-- 체크박스라벨하고싶음 -->
             <div class="banbox">
-                <div class="ban">
-                    <div class="ban1">
-                        <a href="./notice.html">
-                            <img src="./img/banner1.jpg" alt="배너1">
-                        </a>
-                    </div>
-                    <div class="ban2">
-                        <a href="./notice.html">
-                            <img src="./img/banner2.jpg" alt="배너2">
-                        </a>
-                    </div>
-                    <div class="ban3">
-                        <a href="./notice.html">
-                            <img src="./img/banner3.jpg" alt="배너3">
-                        </a>
-                    </div>
+                <div class="ban1">
+                    <img src="./img/banner1.jpg" alt="">
+                </div>
+                <div class="ban2">
+                    <img src="./img/banner2.jpg" alt="">
+                </div>
+                <div class="ban3">
+                    <img src="./img/banner3.jpg" alt="">
                 </div>
             </div>
         </div>
@@ -351,7 +345,21 @@
             gutter: $('.grid2').width() * 0.02
         });
 
+        $(document).ready(function () {
+            $('.banbox').slick({
+                autoplay: true,
+                autoplaySpeed: 2000,
+                dots:true,
+                draggable:true,
+                pauseonHover:true
+            });
+        });
+
+
     </script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
 
 </body>
 

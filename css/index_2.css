@@ -1,0 +1,604 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&family=Quicksand&family=Raleway&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    margin: 50px auto 0px;
+}
+
+h1 {
+    font-size: 80px;
+    font-weight: lighter;
+    display: inline-block;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    display:inline-block;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+
+/* ----------------------------------------------------------- */
+
+header {
+    width: 80%;
+    height: fit-content;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+header>.topmenu {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+header>.topmenu>a {
+    text-decoration: none;
+    color: black;
+    padding: 5px 10px;
+    font-size: 20px;
+}
+
+header>.head {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+header>.head>.home {
+    width: 50%;
+    height: fit-content;
+    display: flex;
+    justify-content: flex-start;
+    align-items: baseline;
+}
+
+header>.head>.home>.logo {
+    padding-right: 20px;
+}
+
+.head>.home>span {
+    width: 30%;
+    display: flex;
+    justify-content: space-around;
+    height: 25px;
+}
+
+.head>.home>span>input {
+    outline: none;
+    border: none;
+    border-bottom: 2px solid black;
+    font-size: 20px;
+}
+
+.head>.home>span>.search {
+    outline: none;
+    border: none;
+    width: 30px;
+    height:30px;
+    background-color: transparent;
+}
+
+.search>img {
+    width: 100%;
+}
+
+header>.head>.custom {
+    width: 15%;
+}
+
+header>.head>.custom>ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.head>.custom>ul>li {
+    padding-left: 10px;
+}
+
+.head>.custom>ul>li>a {
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.7);
+    display: inline-block;
+}
+
+/* ========================================================= */
+
+main {
+    width: 80%;
+    margin:0 auto;
+}
+
+nav {
+    width: 100%;
+    border-top: 2px solid brown;
+    border-bottom: 2px solid brown;
+    margin: 40px 0;
+}
+
+nav>ul {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+}
+
+nav>ul>li {
+    font-size: 20px;
+    padding: 20px 0;
+}
+
+nav>ul>li:first-child>a {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-family: 'Quicksand', sans-serif;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    color: rgb(248, 201, 83);
+}
+
+/* 스크립트로 typewriting 같은 효과는 없나 반복문 뿐인가 */
+
+nav>ul>li:nth-of-type(2)>a {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-family: 'Quicksand', sans-serif;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    color: rgb(219, 83, 78);
+}
+
+nav>ul>li:hover>a{
+    color:brown;
+}
+
+nav>ul>li>a::after{
+    content: "";
+    width:0%;
+    border-bottom:1px solid brown;
+    transition:0.5s;
+}
+
+nav > ul > li:hover >a::after{
+    content: "";
+    display:block;
+    border-bottom:1px solid brown;
+    width:100%;
+}
+/* ------------------------------------섹션 공통 구조--------------------------- */
+
+section {
+    margin:100px auto 50px;
+    width: 90%;
+}
+
+section>.common {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+section>.common>.title {
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* align-items: flex-start; */
+}
+
+section>.common>.title>h3 {
+    font-size: 2.5em;
+    font-weight: lighter;
+    letter-spacing: 12.5%;
+}
+
+section>.common>.title>p {
+    padding-top: 10px;
+    font-size: 1em;
+}
+
+section>.common>.more {
+    width: 12%;
+}
+
+section>.common>.more>a {
+    font-size: 18px;
+}
+
+section>.common>.more:hover>a {
+    color: brown;
+    text-decoration: underline;
+}
+
+@keyframes up{
+    0%{opacity:0; transform:translateY(100px);}
+    100%{opacity:100; transform:translateY(0px);}
+}
+/* -----------------섹션원은 swiper 우선 적용하고, css만지기------------------------------- */
+
+section.one{
+    width:90%;
+    margin:30px auto 0px;
+    overflow:hidden;
+}
+
+.swiper {
+    width: 100%;
+}
+
+.swiper-wrapper {
+    width:100%;
+    text-align: center;
+    display:flex;
+}
+
+.swiper-pagination-bullet{
+    background-color:rgb(255, 255, 255) !important;
+}
+/* 여기 색이 제대로 변경되지 않는당,.. */
+.swiper-pagination-bullet-active{
+    background-color:rgb(165, 134, 109) !important;
+}
+
+.swiper-slide{
+    width:100%;
+    flex-shrink:0;
+}
+
+.swiper-slide>a {
+    width: 100%;
+    display:block;
+}
+
+.swiper-slide>a>img {
+    width: 100%;
+    display:block;
+}
+
+/* --섹션2-> 스크롤 내렸을때 올ㄹ라오는 액션 만들고, 섹션에 마우스 진입하면 셋 이미지 줄어들고 호버하면 커ㅣ면서 설명펼쳐짐*/
+
+section.two{
+    opacity:0;
+    transition:0.5s;
+}
+
+section.up{
+    animation:up 0.7s forwards ease-in-out;
+}
+
+.two > .list{
+    margin-top:50px;
+    width:100%;
+}
+.two > .list > ul{
+    width:95%;
+    margin:0 auto;
+    display:flex;
+    flex-wrap:nowrap;
+    justify-content: space-between;
+}
+.two > .list > ul > li{
+    border:1px solid coral;
+    width:32%;
+    height:400px;
+    display:flex;
+    justify-content: space-between;
+    overflow:hidden;
+}
+
+
+.two > .list > ul > li > div{
+    width:100%;
+    background-color:rgb(243, 210, 166);
+    transition:0.5s;
+}
+.two > .list > ul > li:hover > div{
+    width:70%;
+}
+.two > .list > ul > li > div > a{
+    width:100%;
+}
+.two > .list > ul > li > div > a > img{
+    width:100%;
+}
+
+.two > .list > ul > li:hover > span{
+    width:30%;
+    display:block;
+}
+
+.two > .list > ul > li > span{
+    padding: 10px 5px;
+    display:none;
+    transition:0.5s;
+    width:fit-content;
+    height:fit-content;
+    margin:auto;
+    text-align:center;
+}
+.two > .list > ul > li > span > a{
+    color:brown;
+    font-size:18px;
+}
+
+.two > .list > ul > li > span > p{
+    margin-top:20px;
+    font-size:16px;
+    color:rgb(80, 80, 80);
+    line-height: 1.2em;
+    word-wrap: break-word;
+}
+
+/* ----------------------------two끝-------------------------- */
+
+
+
+
+
+
+/* ----------------------------three시작------------------------- */
+
+section.up{
+    animation:up 0.7s forwards ease-in-out;
+}
+.three > .special{
+    margin-top:50px;
+    width:100%;
+}
+
+.three > .special > ul{
+    width:100%;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+    vertical-align: middle;
+}
+.three > .special > ul > li{
+    border:1px solid blue;
+    flex-shrink:0;
+    width:18%;
+    overflow:hidden;
+    margin-bottom:20px;
+}
+.three > .special > ul > li:nth-of-type(6){
+    width:30%;
+}
+.three > .special > ul > li:nth-of-type(7){
+    width:35%;
+}
+.three > .special > ul > li:nth-of-type(8){
+    width:30%;
+
+}
+.three > .special > ul > li > a{
+    width:100%;
+}
+.three > .special > ul > li > a > img{
+    width:100%;
+}
+
+
+/* ----------------------------three끝------------------------- */
+
+
+
+/* ----------------------------미니코너 시작------------------------- */
+
+.mini-corner{
+    margin:100px auto 0px;
+    width: 90%;
+}
+
+.mini-corner > ul{
+    width:90%;
+    margin:10px auto;
+    display:flex;
+    justify-content: space-between;
+    vertical-align: middle;
+    align-items: center;
+}
+.mini-corner > ul > li{
+    width:24%;
+    text-align:center;
+    align-items: center;
+    margin-bottom:1.2em;
+    background-color: rgb(230, 217, 199);
+}
+.mini-corner > ul > li > a{
+    text-align:center;
+    width:100%;
+    height:70px;
+    width:100%;
+    font-size:1.2em;
+    padding:5px 10px;
+    transition:0.5s;
+    
+}
+.mini-corner p{
+    padding-top:5px;
+    transition:0.5s;
+
+}
+
+.mini-corner > ul > li:nth-of-type(1) > a > p{
+    padding-top:0.9em;
+}
+.mini-corner > ul > li:nth-of-type(2) > a > p{
+    padding-top:0.9em;
+}
+
+.mini-corner > ul > li:hover > a{
+    background-color:brown;
+}
+.mini-corner > ul > li:hover > a > p{
+    color:white;
+}
+
+
+/* ----------------------------미니코너 끝------------------------- */
+
+
+
+/* ----------------------------section4 시작------------------------- */
+
+
+section.four.up{
+    animation:up 0.7s forwards ease-in-out;
+}
+section.four > .diy-item{
+    width:90%;
+    margin:50px auto;
+}
+section.four > .diy-item > ul{
+    width:100%;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    vertical-align: center;
+    align-items: center;
+}
+section.four > .diy-item > ul > li{
+    border:1px solid blue;
+    flex-shrink:0;
+    margin-bottom:20px;
+    width:30%; height:350px;
+    overflow:hidden;
+    position:relative;
+    margin-left:20px;
+    margin-bottom:20px;
+}
+
+section.four > .diy-item > ul >li:nth-of-type(1){
+    width:60%;
+}
+
+section.four > .diy-item > ul > li > img{
+    width:100%;
+}
+section.four > .diy-item > ul > li > a{
+    position:absolute;
+    z-index:2;
+    top:0; left:0;
+    text-align:center;
+    width:100%; height:100%;
+    background-color: rgba(256,256,256,0.5);
+    display:none;
+}
+section.four > .diy-item > ul > li > a > p{
+    color:black;
+    text-decoration:underline;
+    padding:2px;
+    padding-top:calc(50%-(1em/2));
+}
+
+section.four > .diy-item > ul > li:hover > a{
+    display:block;
+}
+
+
+/* ---------------------------section4 끝------------------------- */
+
+
+
+/* ----------------------------section5 시작------------------------- */
+
+section.five.up{
+    animation:up 0.7s forwards ease-in-out;
+}
+
+section.five > .brand_list{
+    width:90%;
+    margin:50px auto 80px;
+}
+section.five > .brand_list > ul{
+    width:100%;
+    display:flex;
+    justify-content: space-around;
+    flex-wrap:wrap;
+    text-align:center;
+}
+section.five > .brand_list > ul > li{
+    width:32%;
+    height:80px;
+    background-color: rgb(230, 217, 199);
+    align-items: center;
+    padding-top:8px;
+    flex-shrink:0;
+    margin-bottom:20px;
+    transition:0.5s;
+}
+
+section.five > .brand_list > ul > li:hover{
+    background-color: transparent;
+}
+section.five > .brand_list > ul > li > p{
+    font-size:1em;
+    padding-top:20px;
+}
+section.five > .brand_list > ul > li:hover > p{
+    color:brown;
+}
+
+
+
+/* ----------------------------section5 끝------------------------- */
+
+/* ----------------------------footer 시작 ------------------------- */
+
+
+footer{
+    width:100%;
+    color:#5C5C5C;
+    line-height:1.2em;
+}
+footer > .footer{
+    width:100%;
+    padding:20px 0;
+}
+footer > .footer > .footer1{
+    width:60%;
+    margin:20px auto 40px;
+    text-align:center;
+    display:flex;
+    justify-content: space-around;
+    font-size:1em;
+    /* color:black; */
+}
+
+footer > .footer > .footer2{
+    text-align:center;
+    width:80%;
+    margin:10px auto;
+    word-wrap:break-word;
+}
+footer > .footer > .footer2 > p{
+    display:inline-block;
+}
+
+footer > .footer > .footer3{
+    width:40%;
+    margin:20px auto 0px;
+}
+
+footer > .footer > .footer3 > img{
+    width:100%;
+}
+
+
+
+/* ----------------------------footer 끝 ------------------------- */

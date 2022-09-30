@@ -5,302 +5,349 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MINIDECO</title>
+    <title>Minideco</title>
     <link rel="stylesheet" href="./css/index.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Nunito+Sans&family=Playfair+Display:ital@1&family=Water+Brush&display=swap"
-        rel="stylesheet">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script defer src="./js/common.js"></script>
-    <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
-    <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
-    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
-    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <script defer src="./js/swiper_2.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 </head>
-
 
 <body>
     <header>
-        <div class="hdbox">
-            <div class="txt">
-                <a href="./review.html">Review</a>
-                <a href="./qna.html">QnA</a>
+        <div class="topmenu">
+            <a href="./qna.html">QnA</a>
+            <a href="./notice.html">Notice</a>
+        </div>
+        <div class="head">
+            <div class="home">
+                <h1 class="logo">
+                    <a href="#">
+                        MiniDeco
+                    </a>
+                </h1>
+                <span>
+                    <input type="text" placeholder="검색어를 입력하세요">
+                    <button class="search">
+                        <img src="./img/icon/search_icon.png" alt="">
+                    </button>
+                </span>
             </div>
 
-            <div class="icon">
-                <a href="./login.html"><img src="./img/icon-login.png" alt="로그인"></a>
-                <a href="./list.html"><img src="./img/icon-search.png" alt="검색"></a>
-                <a href="./login.html"><img src="./img/carticon.png" alt="장바구니"></a>
-                <div>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
+            <div class="custom">
+                <ul>
+                    <li>
+                        <a href="./login.html">Login</a>
+                    </li>
+                    <li>
+                        <a href="#">Join Us</a>
+                    </li>
+                    <li>
+                        <a href="./login.html">Cart</a>
+                    </li>
+                </ul>
             </div>
         </div>
     </header>
 
+
     <main>
-        <div class="logo">
-            <!-- <img src="./img/Mainimage.jpg" alt="배경"> -->
-            <video src="./img/introvideo.mp4" type="video/mp4" autoplay muted></video>
-            <a href="./index_2.html">
-                <p>minideco</p>
-            </a>
-        </div>
-
-        <div class="cate">
+        <nav>
             <ul>
-                <li><a href="./introduce.html">Introduce</a></li>
-                <li><a href="./list.html">Products</a></li>
-                <li><a href="./notice.html">QnA</a></li>
-                <li><a href="./notice.html">Review</a></li>
-                <li><a href="./notice.html">Mypage</a></li>
+                <li><a href="./list.html">New</a></li>
+                <li><a href="#">Sale</a></li>
+                <li><a href="#">룸박스/케이스</a></li>
+                <li><a href="#">가구</a></li>
+                <li><a href="#">소품</a></li>
+                <li><a href="#">조명</a></li>
+                <li><a href="#">벽지</a></li>
             </ul>
-        </div>
+        </nav>
 
-        <div class="navi-bar">
-            <div class="bar">
-                <a href="#">recent</a>
-                <a href="./login.html">wishlist</a>
-                <a href="./login.html">cart</a>
-                <div>
-                    <span>▲</span>
-                    <a href="#">top</a>
+        <section class="one">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+
+                    <div class="swiper-slide">
+                        <a href="./detail1.html">
+                            <img src="./img/banner_re.jpg" alt="">
+                        </a>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <a href="./detail2.html">
+                            <img src="./img/banner_re2.jpg" alt="">
+                        </a>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <a href="./detail1.html">
+                            <img src="./img/banner_re.jpg" alt="">
+                        </a>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <a href="./detail2.html">
+                            <img src="./img/banner_re2.jpg" alt="">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="swiper-pagination"></div>
+                <!-- pagnation은 배너하단에  -->
+            </div>
+        </section>
+
+        <section class="two">
+            <div class="common">
+                <div class="title">
+                    <h3>Best Item</h3>
+                    <p>많은 고객님들께서 찾아주시는 아이템으로 수많은 후기가 품질을 보장합니다!</p>
+                </div>
+                <div class="more">
+                    <a href="#">view more</a>
                 </div>
             </div>
-            <div class="kakao">
-                <a href="./qna.html">
-                    <img src="./img/kakao.png" alt="카카오톡상담">
-                    <p>카카오톡
-                        상담</p>
-                </a>
-            </div>
-        </div>
-
-        <div class="best">
-            <b>best item</b>
-            <p>제일 많이 찾아주시는 아이템들로 많은 고객님께서 후기를 남겨주신 보장된 상품입니다!</p>
-            <div class="bestimg">
+            <div class="list">
                 <ul>
                     <li>
-                        <a href="./detail1.html">
-                            <figure>
-                                <img src="./img/best-one.jpg" alt="">
-                                <figcaption>비비장식장</figcaption>
-                            </figure>
+                        <div>
+                            <a href="./detail1.html">
+                                <img src="" alt="">
+                            </a>
+                        </div>
+                        <span>
+                            <a href="./detail1.html">
+                                제품이름
+                            </a>
+                            <p>
+                                재질:MDF3 mm/아크릴
+                                조립된사이즈:157mm*44mm*103mm(가로*세로*높이)
+                                목공풀로조립하세요~~
+                                채색은아크릴물감.페인트.스테인등 다양하게 채색가능합니다
+                                모모꼬,블라이스 사이즈입니다~
+                                미니데코를 찾아주신 고객님 감사합니다.
+                                상품주문은 회원.비회원 모두 가능합니다.
+                            </p>
+                        </span>
+                    </li>
+
+
+                    <li>
+                        <div>
+                            <a href="#">
+                                <img src="" alt="">
+                            </a>
+                        </div>
+                        <span>
+                            <a href="#">
+                                제품이름
+                            </a>
+                            <p>재질:MDF3 mm/아크릴
+                                조립된사이즈:157mm*44mm*103mm(가로*세로*높이)
+                                목공풀로조립하세요~~
+                                채색은아크릴물감.페인트.스테인등 다양하게 채색가능합니다
+                                모모꼬,블라이스 사이즈입니다~
+                                미니데코를 찾아주신 고객님 감사합니다.
+                                상품주문은 회원.비회원 모두 가능합니다.
+                            </p>
+                        </span>
+                    </li>
+
+
+                    <li>
+                        <div>
+                            <a href="#">
+                                <img src="" alt="">
+                            </a>
+                        </div>
+                        <span>
+                            <a href="#">
+                                제품이름
+                            </a>
+                            <p>
+                                재질:MDF3mm/아크릴
+                                조립된 사이즈:157mm*44mm*103mm(가로*세로*높이)
+                                목공풀로조립하세요
+                                채색은아크릴물감.페인트.스테인등 다양하게 채색가능합니다
+                                모모꼬,블라이스 사이즈입니다~
+                                미니데코를 찾아주신 고객님 감사합니다.
+                                상품주문은 회원.비회원 모두 가능합니다.
+                            </p>
+                        </span>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="three">
+            <div class="common">
+                <div class="title">
+                    <h3>Special Item</h3>
+                    <p>미니데코만의 깜짝 할인! 스페셜한 가격에 득템할 수 있는 기회!</p>
+                </div>
+                <div class="more">
+                    <a href="#">view more</a>
+                </div>
+            </div>
+
+            <div class="special">
+                <ul>
+                    <li>
+                        <a href="#">
+                            <img src="./img/fur/cloth.png" alt="">
                         </a>
                     </li>
                     <li>
-                        <a href="./detail2.html">
-                            <figure>
-                                <img src="./img/best-two.jpg" alt="">
-                                <figcaption>흔들의자</figcaption>
-                            </figure>
+                        <a href="#">
+                            <img src="./img/fur/desk.jpg" alt="">
                         </a>
                     </li>
                     <li>
-                        <a href="./detail1.html">
-                            <figure>
-                                <img src="./img/best-three.jpg" alt="">
-                                <figcaption>마가렛장</figcaption>
-                            </figure>
+                        <a href="#">
+                            <img src="./img/fur/furniture.jpg" alt="">
                         </a>
                     </li>
                     <li>
-                        <a href="./detail2.html">
-                            <figure>
-                                <img src="./img/best-four.jpg" alt="">
-                                <figcaption>모던서랍장</figcaption>
-                            </figure>
+                        <a href="#">
+                            <img src="./img/fur/greendiyfurniture.jpg" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./img/fur/livingroom.jpg" alt="">
+                        </a>
+                    </li>
+                    <!-- 위는 5개 밑은 3개 -->
+                    <li>
+                        <a href="#">
+                            <img src="./img/fur/shelf.jpg" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./img/fur/sofa1.jpg" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="./img/fur/storage.jpg" alt="">
                         </a>
                     </li>
                 </ul>
-                <a href="./list.html">view more ></a>
             </div>
+        </section>
 
+
+        <div class="mini-corner">
+            <ul>
+                <li>
+                    <a href="#">
+                        <p>한가위 특별할인</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <p>액자류 할인</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <p>파롤라레이나(XL)<br>전용관</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <p>Minideco<br>자체제작</p>
+                    </a>
+                </li>
+            </ul>
         </div>
 
-        <div class="banner">
-            <b>special price</b>
-            <p>미니데코만의 깜짝 할인! 스페셜한 아이템을 스페셜한 가격에 만나볼 수 있는 기회!</p>
-            <!-- 체크박스라벨하고싶음 -->
-            <div class="banbox">
-                <div class="ban1">
-                    <img src="./img/banner1.jpg" alt="">
+        <section class="four">
+            <div class="common">
+                <div class="title">
+                    <h3>DIY 미니어처</h3>
+                    <p>내 손으로 만들고 꾸미는 나만의 가구</p>
                 </div>
-                <div class="ban2">
-                    <img src="./img/banner2.jpg" alt="">
-                </div>
-                <div class="ban3">
-                    <img src="./img/banner3.jpg" alt="">
+                <div class="more">
+                    <a href="#">view more</a>
                 </div>
             </div>
-        </div>
+            <div class="diy-item">
+                <ul>
+                    <li>
+                        <img src="./img/fur/cloth.png" alt="">
+                        <a href="#">
+                            <p>제품 이름</p>
+                        </a>
+                    </li>
+                    <li>
+                        <img src="./img/fur/furniture.jpg" alt="">
+                        <a href="#">
+                            <p>제품 이름</p>
+                        </a>
+                    </li>
+                    <li>
+                        <img src="./img/fur/sofa1.jpg" alt="">
+                        <a href="#">
+                            <p>제품 이름</p>
+                        </a>
+                    </li>
+                    <li>
+                        <img src="./img/fur/shelf.jpg" alt="">
+                        <a href="#">
+                            <p>제품 이름</p>
+                        </a>
+                    </li>
+                    <li>
+                        <img src="./img/fur/twobed.jpg" alt="">
+                        <a href="#">
+                            <p>제품 이름</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
 
-        <div class="pretab">
-            <input type="radio" id="diy" name="tab" checked>
-            <input type="radio" id="deco" name="tab">
-
-            <div class="labtab">
-                <label for="diy">DIY</label>
-                <label for="deco">DECO</label>
+        <section class="five">
+            <div class="common">
+                <div class="title">
+                    <h3>Brand</h3>
+                    <p>미니데코에 입점하신 작가님들을 소개합니다.</p>
+                </div>
+                <div class="more">
+                    <a href="#">view more</a>
+                </div>
             </div>
 
-            <div class="box">
-                <div class="board">
-                    <div class="all">
-                        <div class="grid1">
-                            <div class="grid-sizer"></div>
-                            <div class="grid-item width2 height2">
-                                <a href="./detail1.html">
-                                    <img src="./img/P0000FMX.jpg" alt="옷장">
-                                </a>
-                            </div>
-                            <div class="grid-item">
-                                <a href="./detail2.html">
-                                    <img src="./img/P0000FNK.jpg" alt="옷장">
-                                </a>
-                            </div>
-                            <div class="grid-item">
-                                <a href="./detail1.html">
-                                    <img src="./img/P0000FTZ2.jpg" alt="옷장">
-                                </a>
-                            </div>
-                            <div class="grid-item">
-                                <a href="./detail1.html">
-                                    <img src="./img/P0000GCB1.jpg" alt="옷장">
-                                </a>
-                            </div>
-                            <div class="grid-item">
-                                <a href="./detail1.html">
-                                    <img src="./img/P0000GFY.jpg" alt="옷장">
-                                </a>
-                            </div>
-                            <div class="grid-item">
-                                <a href="./detail1.html">
-                                    <img src="./img/P0000GBF.jpg" alt="옷장">
-                                </a>
-                            </div>
-                            <div class="grid-item">
-                                <a href="./detail1.html">
-                                    <img src="./img/P0000FXI.jpg" alt="옷장">
-                                </a>
-                            </div>
-                            <div class="grid-item height2">
-                                <a href="./detail1.html">
-                                    <img src="./img/P0000GFP.jpg" alt="옷장">
-                                </a>
-                            </div>
-                            <div class="grid-item">
-                                <a href="./detail1.html">
-                                    <img src="./img/P0000FTX.jpg" alt="옷장">
-                                </a>
-                            </div>
-                            <div class="grid-item">
-                                <a href="./detail1.html">
-                                    <img src="./img/P0000FUA.jpg" alt="옷장">
-                                </a>
-                            </div>
-                        </div>
-
-                        <div class="grid2">
-                            <div class="grid-sizer"></div>
-                            <div class="grid-item">
-                                <a href="./detail1.html">
-                                    <img src="./img/P00000NO.jpg" alt="옷장">
-                                </a>
-                            </div>
-                            <div class="grid-item">
-                                <a href="./detail1.html">
-                                    <img src="./img/P0000FFF.jpg" alt="옷장">
-                                </a>
-                            </div>
-                            <div class="grid-item width2 height2">
-                                <a href="./detail1.html">
-                                    <img src="./img/P0000GCO.jpg" alt="옷장">
-                                </a>
-                            </div>
-                            <div class="grid-item">
-                                <a href="./detail1.html">
-                                    <img src="./img/P0000GXQ.jpg" alt="옷장">
-                                </a>
-                            </div>
-                            <div class="grid-item">
-                                <a href="./detail1.html">
-                                    <img src="./img/P0000FUA.jpg" alt="옷장">
-                                </a>
-                            </div>
-                            <div class="grid-item">
-                                <a href="./detail1.html">
-                                    <img src="./img/P0000FWB.jpg" alt="옷장">
-                                </a>
-                            </div>
-                            <div class="grid-item height2">
-                                <a href="./detail1.html">
-                                    <img src="./img/P0000FSH.jpg" alt="옷장">
-                                </a>
-                            </div>
-                            <div class="grid-item">
-                                <a href="./detail1.html">
-                                    <img src="./img/P00000ZQ.jpg" alt="옷장">
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div class="brand_list">
+                <ul>
+                    <li>
+                        <p>@mini_world</p>
+                    </li>
+                    <li>
+                        <p>@mani_land</p>
+                    </li>
+                    <li>
+                        <p>@real_room</p>
+                    </li>
+                    <li>
+                        <p>@architecter</p>
+                    </li>
+                    <li>
+                        <p>@happy_room</p>
+                    </li>
+                    <li>
+                        <p>@minihousing</p>
+                    </li>
+                </ul>
             </div>
-            <a href="./list.html">view more ></a>
-        </div>
+        </section>
+    </main>
 
 
-        <div class="review">
-            <b>Review</b>
-            <p>미니데코를 이용해보신 고객님들의 찐 리얼후기!</p>
-            <div class="re-card">
-                <div class="card1">
-                    <a href="./notice.html">
-                        <div class="img"><img src="./img/review1.jpg" alt=""></div>
-                        <b>ddd님의 후기</b>
-                        <p>초보자들도 만들기 쉬워서 좋아요!</p>
-                    </a>
-                </div>
-
-                <div class="card2">
-                    <a href="./notice.html">
-                        <div class="img"><img src="./img/review2.jpg" alt=""></div>
-                        <b>bbb님의 후기</b>
-                        <p>채색 후에는 다른 분위기로 확 바뀌어요!<br>
-                            한 제품으로 여러가지 분위기를 낼 수 있어요!</p>
-                    </a>
-                </div>
-
-                <div class="card3">
-                    <a href="./notice.html">
-                        <div class="img"><img src="./img/review3.jpg" alt=""></div>
-                        <b>aaa님의 후기</b>
-                        <p>다양한 소품들이 많아 가구와 함께<br>
-                            배치하기 좋아요!</p>
-                    </a>
-                </div>
-
-                <div class="card4">
-                    <a href="./notice.html">
-                        <div class="img"><img src="./img/review4.jpg" alt=""></div>
-                        <b>eee님의 후기</b>
-                        <p>가구에 어울리는 소품들도 함께 있어서<br>
-                            여러가지를 한번에 구매할 수 있어요!</p>
-                    </a>
-                </div>
-            </div>
-            <a href="./notice.html">view more ></a>
-        </div>
-
-
-
-        <footer>
+    <footer>
+        <div class="footer">
             <div class="footer1">
                 <div>
                     <p>cs center</p>
@@ -316,51 +363,27 @@
                 </div>
             </div>
             <div class="footer2">
-                <p>이용약관:<a href="http://minideco.co.kr/front/php/privacy_agree.php" target="_blank"><b>개인정보 취급방침</b></a>
+                <p>[이용약관:<a href="http://minideco.co.kr/front/php/privacy_agree.php" target="_blank"><b>개인정보 취급방침</b>]</a>
                 </p>
+                <br>
+                <br>
                 <p>회사명:네오팜 / 대표:최종오 / 소재지:경기도 시흥시 군자양지편길5(군자동) / 사업자번호:
                     <a href="https://www.ftc.go.kr/www/bizCommList.do?key=232" target="_blank">130-23-44405</a><br>
                     통신판매신고번호: 2019-경기시흥-1704 / 개인정보보호책임자:최종오 / Email:jongottan@naver.com<br>
-                    HOSTING By CAFE24
                 </p>
+                <br>
+                <br>
+                <p>HOSTING By CAFE24</p>
             </div>
-        </footer>
-    </main>
+            <div class="footer3">
+                <img src="./img/footer3.png" alt="">
+            </div>
+        </div>
+    </footer>
 
-
-
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-    <script src='https://masonry.desandro.com/masonry.pkgd.js'></script>
     <script>
-        $('.grid1').masonry({
-            itemSelector: '.grid-item',
-            columnWidth: '.grid-sizer',
-            gutter: $('.grid1').width() * 0.02
-        });
-    </script>
-    <script>
-        $('.grid2').masonry({
-            itemSelector: '.grid-item',
-            columnWidth: '.grid-sizer',
-            gutter: $('.grid2').width() * 0.02
-        });
-
-        $(document).ready(function () {
-            $('.banbox').slick({
-                autoplay: true,
-                autoplaySpeed: 2000,
-                dots:true,
-                draggable:true,
-                pauseonHover:true
-            });
-        });
-
 
     </script>
-    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-    <script type="text/javascript" src="slick/slick.min.js"></script>
-
 </body>
 
 </html>
